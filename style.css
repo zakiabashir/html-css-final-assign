@@ -20,7 +20,16 @@ header {
     top: 0%;
     position: sticky;
 }
+.social-icons a {
+    color: rgb(76, 75, 75);
+    margin-right: 10px;
+    font-size: 20px;
+    display: inline-block;
+}
 
+.social-icons a:hover {
+    color: #b79e38;
+}
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -88,7 +97,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('/hero.jpg'); /* Replace with your background image path */
+    background-image: url('/images/hero.jpg'); /* Replace with your background image path */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -797,14 +806,14 @@ color: #040404;
     margin-right: 10px;
 }
 
-.social-icons a {
-    color: rgb(76, 75, 75);
+.fsocial-icons a {
+    color: rgb(27, 26, 26);
     margin-right: 10px;
     font-size: 20px;
     display: inline-block;
 }
 
-.social-icons a:hover {
+.fsocial-icons a:hover {
     color: #b79e38;
 }
 
@@ -818,21 +827,31 @@ color: #040404;
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     /* header section media query */
-    .contact-info i{
-        flex-wrap: wrap;
-        gap: 2px;
+    .header-top{
+        padding:10px 0;
+        margin: 10px 8px;
+    }
+    .contact-info p{
+        display: block;
+       
+    }
+    .social-icons a{
+        display: block;
     }
     nav{
         display: grid;
+        padding: 5px;
+        margin: 4px 0;
 grid-template-columns: 1fr;
 gap: 10px;
     }
     .li {
         display: flex;
         flex-wrap: wrap;
-       line-height: 0.5rem;
-       margin: 2% 4%;
+       line-height: 0.1rem;
+       margin: 0 2%;
     }
+    
     /* advantages media query */
     .advantage-cards{
         display: grid;
@@ -843,22 +862,24 @@ gap: 10px;
     .about-us{
         width: 100%;
     }
-    .about-us container {
+    .container {
         display: flex;
-        flex-wrap: wrap;
-        
+       padding: 0;
+       margin: 0;
     }
     .text-content{
        width: 100%;
+       display: grid;
+       margin: 0;
+       padding: 0;
     }
     .text-content p{
         width: 100%;
         margin:10px 40px;
-        justify-content: center;
         text-align: left;
     }
     .text-content button{
-        margin: 40px;
+        margin:20px 40px;
     }
     .image-content{
         width: 60%;
@@ -878,7 +899,6 @@ gap: 10px;
     .services{
         display: grid;
         grid-template-columns: 1fr;
-        margin-left: 60px;
         gap: 40px;
     }
     /* portfolio media query */
@@ -930,18 +950,18 @@ gap: 10px;
     /* people section media query */
     .people-section{
 width: 100%;
-margin: 20px auto;
-padding:10px auto;
+margin: 20px 0;
+padding:10px 0;
     }
     .person {
       width: 100%;
-      margin: auto;
+      margin: 10px auto;
       padding: 5px 0;
     }
     .subtitle{
         width: 100%;
-        margin: auto;
-        padding: 10px;
+        margin: 0;
+        padding: 0;
         flex-direction: column;
     }
     .line-vertical {
@@ -969,7 +989,8 @@ flex-direction: column;
     width: 100%;
     margin: auto;
     padding: auto;
-    flex-direction: column;
+   display: grid;
+   
     
  }
  .skill{
@@ -980,7 +1001,6 @@ flex-direction: column;
  }
  .skill p{
     width: 100%;
-    margin-left: -90px;
     padding: 10px 0;
     flex-direction: column;
  }
@@ -998,7 +1018,7 @@ flex-direction: column;
 
  }
  .project-form input{
-    width: 250px;
+    width: 200px;
  }
  .project-form button{
     width: 30%;
