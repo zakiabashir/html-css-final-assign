@@ -88,7 +88,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('/public/hero.jpg'); /* Replace with your background image path */
+    background-image: url('/hero.jpg'); /* Replace with your background image path */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
